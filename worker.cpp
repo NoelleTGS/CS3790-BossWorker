@@ -28,4 +28,12 @@ int main(const int argc, char *argv[]) {
 
     ofstream file(filename);
 
+    file << "Primes between " << argv[1] << " and " << argv[2] << ":" << endl;
+    for(int i = stoi(argv[1]); i <= stoi(argv[2]); i++) {
+        if (isPrime(i)) {
+            file << i << endl;
+        }
+    }
+
+    return 0;
 }
