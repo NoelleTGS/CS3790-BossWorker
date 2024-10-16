@@ -10,7 +10,6 @@ int main(const int argc, char *argv[]) {
     }
 
     int range = stoi(argv[2]) / stoi(argv[1]);
-    cout << range << " per worker" << endl;
 
     int status;
     for (int i = 0; i < stoi(argv[1]); i++) {
