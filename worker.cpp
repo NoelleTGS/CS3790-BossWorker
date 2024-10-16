@@ -1,6 +1,7 @@
 #include <iostream>
 #include <ostream>
 #include <string>
+#include <fstream>
 using namespace std;
 
 bool isPrime(int number) {
@@ -19,5 +20,12 @@ int main(const int argc, char *argv[]) {
         return 1;
     }
 
+    string filename = "primes";
+    filename += argv[1];
+    filename += "to";
+    filename += argv[2];
+    filename += ".txt";
+
+    ofstream file(filename);
 
 }
